@@ -106,14 +106,14 @@ body {
 
 
 
-    /* .icon:hover {
+    .icon:hover {
         background-color: none;
-    } */
+    }
 
 
 
     .icon img {
-        width: 25px;
+        width: 24px;
         /* filter:invert(1); */
     }
 }
