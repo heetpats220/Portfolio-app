@@ -66,11 +66,11 @@ body {
   border-radius: 30%;
   transition: all 0.1s ease-in;
 }
-
+/* 
 .icon:hover {
-  background-color: var(--subtext);
-  /* filter:invert(1); */
-}
+  /* background-color: var(--subtext); */
+  /* filter:invert(1); 
+} */
 
 .icon img {
   width: 25px;
