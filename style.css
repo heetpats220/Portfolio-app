@@ -1,0 +1,116 @@
+:root {
+    --bg: rgb(12, 15, 20);
+    --text: #fff;
+    --subtext: #a8a8a8;
+    --border: 1px solid #262626;
+    --hover: #1a1a1a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    height: 100vh;
+    overflow: hidden;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    overflow-y: scroll;
+}
+
+.layout {
+    display: flex;
+    height: 100vh;
+}
+
+.icon-bar {
+    width: 70px;
+    border-right: var(--border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
+    gap: 50px;
+}
+
+.icon {
+    font-size: 22px;
+    cursor: pointer;
+    filter: invert(1);
+    background-color: rgb(243, 240, 235);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30%;
+    transition: all 0.1s ease-in;
+}
+
+.icon:hover {
+    background-color: var(--subtext);
+    /* filter:invert(1); */
+}
+
+.icon img {
+    width: 25px;
+    /* filter:invert(1); */
+}
+
+.icon a {
+    display: flex;
+}
+.main{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+}
+
+@media (max-width: 768px) {
+
+
+
+    .icon-bar {
+        bottom: 0px;
+        position: fixed;
+        /* left: 0px; */
+        /* top: 0; */
+        height: 80px;
+        background: var(--bg);
+        border-top: var(--border);
+        transition: 0.3s;
+        z-index: 999;
+        width: 100%;
+        /* display: flex; */
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        gap: 40px;
+    }
+
+    .icon-bar.open {
+        left: 0;
+    }
+
+
+
+    .icon:hover {
+        background-color: none;
+    }
+
+
+
+    .icon img {
+        width: 32px;
+        /* filter:invert(1); */
+    }
+}
