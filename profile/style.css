@@ -58,8 +58,8 @@ body {
   cursor: pointer;
   filter: invert(1);
   background-color: rgb(243, 240, 235);
-  width: 40px;
-  height: 40px;
+  /* width: 40px;
+  height: 40px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -75,6 +75,7 @@ body {
 .icon img {
   width: 25px;
   /* filter:invert(1); */
+  height:25px;
 }
 .icon a{
   display:flex;
@@ -119,6 +120,7 @@ body {
 .profile-header {
   display: flex;
   flex-direction: column;
+  /* zoom:0.5; */
 }
 
 .profile_main {
@@ -207,7 +209,7 @@ body {
   border-radius: 8px;
   color: white;
   cursor: pointer;
-  width: 300px;
+  width: 280px;
   height: 40px;
   transition: all 0.1s ease-in;
 }
@@ -222,6 +224,7 @@ body {
   gap: 30px;
   margin: 0px 0px 40px 40px;
   /* border-bottom: var(--border); */
+  /* zoom:0.5; */
 }
 
 .highlight {
@@ -266,6 +269,7 @@ body {
   gap: 80px;
   border-top: 1px solid var(--border);
   padding-top: 15px;
+  /* zoom:0.5; */
 }
 
 .tab {
@@ -292,6 +296,7 @@ body {
   justify-content: start;
   height:500px;
   /* overflow-y: scroll; */
+  /* zoom:0.5; */
 }
 
 .empty {
@@ -354,7 +359,7 @@ body {
     position: fixed;
     /* left: 0px; */
     /* top: 0; */
-    height: 80px;
+    height: 48px;
     background: var(--bg);
     border-top: var(--border);
     transition: 0.3s;
@@ -365,7 +370,7 @@ body {
     justify-content: space-evenly;
     padding-bottom: 20px;
     padding-top: 20px;
-    gap: 40px;
+    gap: 20px;
   }
 
   .icon-bar.open {
@@ -410,8 +415,12 @@ body {
     margin:10px 0px;
 }
 .icon img {
-  width: 45px;
+  width: 24px;
   /* filter:invert(1); */
+  height:24px;
+}
+.posts, .highlights, .profile-header, .tabs{
+  zoom:0.5;
 }
 }
 @media(min-width: 768px) {
