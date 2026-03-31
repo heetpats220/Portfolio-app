@@ -395,6 +395,7 @@ body {
         height: 50px;
         border-radius: 11px;
         font-weight: 600;
+        width:80%;
 }
 .profile_main {
     display: flex;
