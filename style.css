@@ -61,11 +61,18 @@ body {
 .icon img {
     width: 25px;
     /* filter:invert(1); */
+    height:25px;
 }
 
 .icon a {
     display: flex;
     height:24px;
+}
+
+
+.layout_main{
+    display:flex;
+    width: calc(100% - 70px);
 }
 .main{
   display:flex;
@@ -80,6 +87,9 @@ body {
 
 @media (max-width: 768px) {
 
+    .layout_main{
+        width:100%;
+    }
 
 
     .icon-bar {
@@ -116,5 +126,6 @@ body {
     .icon img {
         width: 24px;
         /* filter:invert(1); */
+        height:24px;
     }
 }
