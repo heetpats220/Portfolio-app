@@ -65,6 +65,7 @@ body {
 
 .icon a {
     display: flex;
+    height:24px;
 }
 .main{
   display:flex;
