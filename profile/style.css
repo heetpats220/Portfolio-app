@@ -391,11 +391,11 @@ body {
   /* padding: 40px 60px; */
 }
 .profile-buttons button{
-  font-size: 24px;
-        height: 60px;
-        border-radius: 11px;
-        font-weight: 600;
-        width:80%;
+  font-size: 28px;
+  height: 60px;
+  border-radius: 11px;
+  font-weight: 600;
+  width:80%;
 }
 .profile_main {
     display: flex;
@@ -425,7 +425,7 @@ body {
   font-size:24px;
 }
 .bio{
-  font-size:27px;
+  font-size:30px;
 }
 .bio p{
   height:45px;
