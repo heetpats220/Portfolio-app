@@ -392,7 +392,7 @@ body {
 }
 .profile-buttons button{
   font-size: 24px;
-        height: 55px;
+        height: 60px;
         border-radius: 11px;
         font-weight: 600;
         width:80%;
@@ -425,7 +425,7 @@ body {
   font-size:24px;
 }
 .bio{
-  font-size:26px;
+  font-size:27px;
 }
 .bio p{
   height:45px;
@@ -437,8 +437,8 @@ body {
   font-size:24px;
 }
 .highlight img{
-  width:100px;
-  height:100px;
+  width:120px;
+  height:120px;
 }
 .abt{
   font-size:22px;
