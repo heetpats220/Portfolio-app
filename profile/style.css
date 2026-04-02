@@ -391,8 +391,8 @@ body {
   /* padding: 40px 60px; */
 }
 .profile-buttons button{
-  font-size: 21px;
-        height: 50px;
+  font-size: 24px;
+        height: 55px;
         border-radius: 11px;
         font-weight: 600;
         width:80%;
@@ -406,12 +406,12 @@ body {
     margin-bottom:30px;
 }
  .profile-pic img {
-    width: 130px;
-    height: 130px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
 }
 .top-row h2 {
-    font-size: 20px;
+    font-size: 40px;
     font-weight: 600;
     margin:10px 0px;
 }
@@ -422,6 +422,26 @@ body {
 }
 .posts, .highlights, .profile-header, .tabs{
   zoom:0.5;
+  font-size:24px;
+}
+.bio{
+  font-size:26px;
+}
+.bio p{
+  height:45px;
+}
+.stats span{
+  font-size: 24px;
+}
+.highlight{
+  font-size:24px;
+}
+.highlight img{
+  width:100px;
+  height:100px;
+}
+.abt{
+  font-size:22px;
 }
 }
 @media(min-width: 768px) {
