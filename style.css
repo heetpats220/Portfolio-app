@@ -84,6 +84,13 @@ body {
 .main img{
     width:100px;
 }
+.main-content{
+    display:none;
+}
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
 
 @media (max-width: 768px) {
 

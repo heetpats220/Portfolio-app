@@ -181,9 +181,9 @@ body {
 }
 
 .bio p a {
-  color: var(--text);
-  /* text-decoration:none; */
-  text-underline-position: below;
+  color: #0000EE;
+  text-decoration:none;
+  /* text-underline-position: below; */
   transition: all 0.1s ease-in-out;
 }
 
