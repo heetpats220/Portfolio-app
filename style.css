@@ -82,8 +82,8 @@ body {
   align-items: center;
   width:100%;
 }
-.main img{
-    width:100px;
+.splash img{
+    width:100px; 
 }
 .main-content{
     display:none;
