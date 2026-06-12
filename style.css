@@ -29,6 +29,18 @@ body {
     height: 100vh;
 }
 
+.hamburger {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+
+}
+
+.hamburger img {
+  width: 30px;
+  filter: invert(1);
+}
+
 .icon-bar {
     width: 70px;
     border-right: var(--border);
@@ -59,6 +71,7 @@ body {
   align-items: center;
   padding: 20px;
   border-bottom: var(--border);
+  margin-top:70px;
 }
 
 .header h2 {
@@ -107,6 +120,8 @@ body {
 }
 .main-content{
     display:none;
+    flex-direction: column;
+    width:100%;
 }
 .fade-out {
     opacity: 0;
@@ -117,13 +132,14 @@ body {
     max-width:700px;
     padding:20px;
     margin:auto;
+    width:90%;
 }
 .stories{
     display:flex;
     gap:20px;
     overflow-x:auto;
     padding-bottom:20px;
-    width:300px;
+    width:100%;
 }
 
 .story{
@@ -196,6 +212,13 @@ body {
         width:100%;
     }
 
+    .hamburger {
+    display: none;
+  }
+
+    /* .stories{
+        width:300px;
+    } */
 
     .icon-bar {
         bottom: 0px;
