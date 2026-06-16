@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Instagram Profile Clone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Parkinsans:wght@300..800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+
+  <div class="hamburger" id="hamburger">
+    <img src="../static/Instagram_simple_icon.svg" alt="">
+  </div>
+
+
+  <div class="layout">
+
+    <!-- SIDEBAR -->
+    <aside class="icon-bar" id="sidebar">
+      <div class="icon"><a href="/"><img src="../static/svgviewer-png-output (1).png" alt="404" srcset=""></a></div>
+      <div class="icon"><img src="../static/svgviewer-png-output.png" alt="404" srcset=""></div>
+      <div class="icon"><a href="/skills/"><img src="../static/svgviewer-png-output (6).png" alt="" srcset=""></a></div>
+      <div class="icon"><img src="../static/svgviewer-png-output (3).png" alt="" srcset=""></div>
+      <div class="icon"><a href="/addnew/"><img src="../static/svgviewer-png-output (4).png" alt=""></a></div>
+      <div class="icon"><a href="/profile/"><img src="../static/svgviewer-png-output (5).png" alt=""></a></div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="profile-container">
+
+      <div class="header">
+        <h2>New Post</h2>
+        <span> Add a blog or review</span>
+      </div>
+      <div class="comments-page">
+
+        <!-- Header -->
+        <div class="post-header">
+          <img src="profile.jpg" alt="">
+          <div class="user-info">
+            <span class="username">heetpatidar</span>
+            <span class="follow">• Follow</span>
+          </div>
+
+          <i class="fa-solid fa-ellipsis"></i>
+        </div>
+
+        <!-- Comments -->
+        <div class="comments-container">
+
+          <div class="comment">
+            <img src="profile1.jpg" alt="">
+
+            <div class="comment-body">
+              <p>
+                <span class="username">john_doe</span>
+                <span class="review">Great portfolio design! 🔥</span>
+              </p>
+
+              <div class="comment-meta">
+                <span>11 Jan 2026</span>
+                <span>12 likes</span>
+                <span>Reply</span>
+                <span class="delete">Delete</span>
+              </div>
+            </div>
+
+            <i class="fa-regular fa-heart"></i>
+          </div>
+
+
+          <div class="comment">
+            <img src="profile2.jpg" alt="">
+
+            <div class="comment-body">
+              <p>
+                <span class="username">webdev_raj</span>
+                <span class="review">Love the Instagram-inspired UI.</span>
+              </p>
+
+              <div class="comment-meta">
+                <span>3h</span>
+                <span>4 likes</span>
+                <span>Reply</span>
+                <span class="delete">Delete</span>
+              </div>
+            </div>
+
+            <i class="fa-regular fa-heart"></i>
+          </div>
+
+        </div>
+
+        <!-- Input -->
+        <div class="comment-input">
+          <input type="text" id="comment-text" placeholder="Add a comment..." />
+          <button id="post-comment">Post</button>
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
