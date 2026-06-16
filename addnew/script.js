@@ -4,7 +4,7 @@ let commentsPage = document.querySelector(".comments-container");
 let named = "";
 let userInfo = document.querySelector(".user-info");
 comment.addEventListener('click',()=>{
-    named = prompt("Enter your name");
+    // named = prompt("Enter your name");
 })
 let now = new Date();
 let day = now.getDate();
@@ -16,6 +16,7 @@ let timestamp = `${day} ${month} ${year}, ${hours}:${min}`;
 let text = comment.value;
 post.addEventListener('click',()=>{
     let text = comment.value;
+    named = prompt("Enter your name");
     console.log(text);
     let commentDiv = document.createElement("div");
     commentDiv.classList.add("comment");
