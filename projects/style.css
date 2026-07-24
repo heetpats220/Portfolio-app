@@ -345,7 +345,7 @@ body {
     left: 0;
   }
   .reel-container{
-    margin-top:70px;
+    /* margin-top:70px; */
     display: flex;
         align-items: center;
   }
@@ -354,12 +354,12 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  border-bottom: var(--border);
+  /* border-bottom: var(--border); */
   position: absolute;
   top: 0px;
   z-index: 5;
   width: 100%;
-  background-color: var(--bg);
+  background-color: rgb(12 15 20 / 50%);;
 }
 
   .icon:hover {
@@ -375,6 +375,6 @@ body {
   }
 
   .reel-card{
-    width:95%;
+    /* width:95%; */
   }
 }
