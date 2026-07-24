@@ -163,6 +163,7 @@ body {
 
   position: relative;
   height: 87vh;
+  /* width:95%; */
   background: black;
 }
 
@@ -345,6 +346,8 @@ body {
   }
   .reel-container{
     margin-top:70px;
+    display: flex;
+        align-items: center;
   }
   .header {
   display: flex;
@@ -369,5 +372,9 @@ body {
     width: 24px;
     /* filter:invert(1); */
     height: 24px;
+  }
+
+  .reel-card{
+    width:95%;
   }
 }
