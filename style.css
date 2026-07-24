@@ -248,6 +248,38 @@ body {
 .stories::-webkit-scrollbar:hover {
   background-color: var(--hover);
 }
+
+.story-viewer{
+    display:none;
+    position:fixed;
+    /* inset:0; */
+    z-index:9999;
+    /* background-color:yellow; */
+}
+#storyFrame{
+    width:100vw;
+    height:100vh;
+    border:none;
+}
+.story-viewer.active{
+    display:block;
+}
+
+
+#back img{
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    background-color: transparent;
+    filter:invert(1);
+    width:28px;
+}
+
+
+
+
+
+
 @media (max-width: 768px) {
 
     .layout_main{

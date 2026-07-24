@@ -6,22 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram-Portfolio-Project</title>
     <link rel="stylesheet" href="style.css">
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Parkinsans:wght@300..800&display=swap"
-    rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Parkinsans:wght@300..800&display=swap"
+        rel="stylesheet">
     <link rel="icon" href="icons8-instagram-100.png" type="image/png">
 </head>
 
 <body>
     <div class="hamburger" id="hamburger">
-    <img src="./static/Instagram_simple_icon.svg" alt="">
-  </div>
+        <img src="./static/Instagram_simple_icon.svg" alt="">
+    </div>
 
     <div class="layout">
         <!-- SIDEBAR -->
         <aside class="icon-bar" id="sidebar">
             <div class="icon"><a href="/"><img src="static/svgviewer-png-output (7).png" alt="404" srcset=""></a></div>
-            <div class="icon"><a href="/projects/"><img src="static/svgviewer-png-output.png" alt="404" srcset=""></a></div>
+            <div class="icon"><a href="/projects/"><img src="static/svgviewer-png-output.png" alt="404" srcset=""></a>
+            </div>
             <div class="icon"><a href="/skills/"><img src="static/svgviewer-png-output (6).png" alt="" srcset=""></a>
             </div>
             <div class="icon"><img src="static/svgviewer-png-output (3).png" alt="" srcset=""></div>
@@ -29,6 +30,11 @@
             <div class="icon"><a href="/profile/"><img src="static/svgviewer-png-output (5).png" alt=""></a></div>
         </aside>
 
+        <div id="storyViewer" class="story-viewer">
+            <!-- <button id="back">#</button> -->
+            <div id="back"><img src="./static/svgviewer-png-output (16).png" alt=""></div>
+            <iframe id="storyFrame"></iframe>
+        </div>
         <div class="layout_main">
             <div class="main">
                 <div class="splash"><img src="static/downloadlogoinsta.png" alt=""></div>
@@ -46,42 +52,29 @@
 
                             <div class="stories">
 
-                                <div class="story">
-                                    <img src="images/react.png">
-                                    <p>React</p>
+                                <div class="story" data-story="stories/sem4/sem4.html">
+                                    <img src="./static/number-4.png">
+                                    <p>Sem 4</p>
+                                </div>
+                                <div class="story" data-story="stories/sem3/sem3.html">
+                                    <img src="./static/number-3.png">
+                                    <p>Sem 3</p>
                                 </div>
 
-                                <div class="story">
-                                    <img src="images/java.png">
-                                    <p>Java</p>
+                                <div class="story"  data-story="stories/sem2/sem2.html">
+                                    <img src="./static/number-2.png">
+                                    <p>Sem 2</p>
                                 </div>
 
-                                <div class="story">
-                                    <img src="images/python.png">
-                                    <p>Python</p>
+                                <div class="story" data-story="stories/sem1/sem1.html">
+                                    <img src="./static/number-1.png">
+                                    <p>Sem 1</p>
                                 </div>
-                                <div class="story">
-                                    <img src="images/python.png">
-                                    <p>Python</p>
-                                </div>
-                                <div class="story">
-                                    <img src="images/python.png">
-                                    <p>Python</p>
-                                </div>
-                                <div class="story">
-                                    <img src="images/python.png">
-                                    <p>Python</p>
-                                </div>
-                                <div class="story">
-                                    <img src="images/python.png">
-                                    <p>Python</p>
-                                </div>
-                                <div class="story">
-                                    <img src="images/python.png">
-                                    <p>Python</p>
-                                </div>
+
 
                             </div>
+
+
 
                             <div class="post">
                                 <div class="post-header">
