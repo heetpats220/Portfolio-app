@@ -24,3 +24,18 @@ stories.forEach(story => {
 document.getElementById("back").onclick = ()=>{
     viewer.classList.remove("active");
 };
+
+// let down = document.getElementById("down");
+// down.addEventListener('click', () => {
+//    let confirmation = confirm("Do you want to download CV?")
+
+//    if(confirmation){
+//     let pdf = document.createElement("a");
+//     console.log(pdf)
+//     pdf.href = "../static/Heet Patidar - resume (2).pdf"
+//     console.log(pdf)
+//     pdf.download = "Heet Patidar.pdf";
+//     pdf.click();
+//    }
+   
+// });
