@@ -261,6 +261,16 @@ body {
   filter: invert(1);
 }
 
+.chat{
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity .4s ease, transform .4s ease;
+}
+
+.chat.show{
+    opacity: 1;
+    transform: translateY(0);
+}
 
 /* MOBILE */
 @media (max-width: 768px) {

@@ -310,7 +310,26 @@ body {
 #storyFrame.loaded{
     opacity:1;
 } */
+.post{
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity .4s ease, transform .4s ease;
+}
 
+.post.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+.post{
+
+    transition:.3s;
+}
+
+.post:hover{
+
+    transform:translateY(-3px);
+
+}
 
 
 
