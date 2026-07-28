@@ -86,3 +86,49 @@ mode.addEventListener('click',()=>{
 
 
 });
+
+document.querySelectorAll(".post").forEach(post => {
+
+    const img = post.querySelector(".post-image");
+    const next = post.querySelector(".next");
+    const prev = post.querySelector(".prev");
+    const post_count = document.querySelector(".post-count");
+    const images = JSON.parse(img.dataset.images);
+
+    let current = 0;
+    prev.style.display = "none";
+    next.addEventListener("click", () => {
+        current++;
+        prev.style.display = "block";
+        if (current >= images.length) {
+            // current = 0;          // loop back to first
+            current = images.length - 1; // stop at last
+            next.style.display = "none";
+        }
+        if(current==images.length-1){
+            next.style.display = "none";
+        }
+        img.src = images[current];
+        post_count.innerHTML = `${current + 1}/${images.length}`;
+        console.log(current);
+    });
+
+    prev.addEventListener("click", () => {
+        current--;
+        next.style.display = "block";
+        if (current < 0) {
+            current = images.length - 1; // loop to last
+            current = 0; // stop at first
+            prev.style.display = "none";
+        }
+        if(current == 0){
+            prev.style.display = "none";
+        }
+
+        img.src = images[current];
+        post_count.innerHTML = `${current + 1}/${images.length}`;
+        console.log(current);
+    });
+
+});
+

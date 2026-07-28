@@ -353,7 +353,21 @@ body {
     border:none;
     background: linear-gradient(135deg, #962fbf, #d62976, #fa7e1e, #feda75);
 }
-
+.next {
+    /* background-color: black; */
+    position: absolute;
+    top: 50%;
+    right: 0px;
+}
+.prev {
+    top: 50%;
+    position: absolute;
+    left: 0px;
+    /* background-color: black;*/ 
+}
+.img-container{
+    position:relative;
+}
 
 
 
@@ -407,4 +421,7 @@ body {
         /* filter:invert(1); */
         height:24px;
     }
+    /* .next .prev{
+        top:200px;
+    } */
 }

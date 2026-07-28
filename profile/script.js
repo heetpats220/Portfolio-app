@@ -15,7 +15,7 @@ cv_btn.addEventListener('click', () => {
    if(confirmation){
     let pdf = document.createElement("a");
     console.log(pdf)
-    pdf.href = "../static/Heet Patidar - resume (2).pdf"
+    pdf.href = "../static/Heet Patidar CV.pdf"
     console.log(pdf)
     pdf.download = "Heet Patidar.pdf";
     pdf.click();
