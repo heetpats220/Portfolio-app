@@ -31,7 +31,13 @@ post.addEventListener('click',()=>{
     let randpfp = pfps[Math.floor(Math.random()*pfps.length)];
     let text = comment.value;
     let userid = Math.floor(Math.random()*100);
+    if(text==""){
+        return
+    }
     named = prompt("Enter your name");
+    if(named===null){
+        return
+    }
     if(named==""){
         named = "User" + userid;
     }
@@ -50,10 +56,11 @@ post.addEventListener('click',()=>{
     <div class="comment-meta">
     <span>${timestamp}</span>
     <span>1 like</span>
-    <span>Reply</span>
     <span class="delete">Delete</span>
     </div>
     </div>`;
+    
+    
     
     let commentData = {
         id: Date.now(),
@@ -91,7 +98,6 @@ function loadComments(){
     <div class="comment-meta">
     <span>${comment.timestamp}</span>
     <span>1 like</span>
-    <span>Reply</span>
     <span class="delete">Delete</span>
     </div>
     </div>`;

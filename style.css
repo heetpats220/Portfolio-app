@@ -358,12 +358,14 @@ body {
     position: absolute;
     top: 50%;
     right: 0px;
+    cursor:pointer;
 }
 .prev {
     top: 50%;
     position: absolute;
     left: 0px;
     /* background-color: black;*/ 
+    cursor:pointer;
 }
 .img-container{
     position:relative;
