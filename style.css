@@ -502,5 +502,8 @@ body {
         /* filter:invert(1); */
         height:24px;
     }
+    .next, .prev{
+        display:none;
+    }
     
 }

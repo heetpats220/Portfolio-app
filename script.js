@@ -124,7 +124,7 @@ document.querySelectorAll(".img-container").forEach(container => {
  if (window.innerWidth <= 700) {
         prev.style.display = "none";
         next.style.display = "none";
-        requestAnimationFrame(updateArrows);
+        // requestAnimationFrame(updateArrows);
         return;
     }
         prev.style.display =
