@@ -2,16 +2,20 @@ const express = require("express");
 
 const app = express();
 
+app.use(express.json());
 
-app.get("/", (req,res)=>{
+app.post("/", (req, res) => {
 
-    res.send("Backend is working!");
+    console.log("Request Body:");
+    console.log(req.body);
+
+    res.json({
+        message: `Thank you, ${req.body.name}!`,
+        feedback: req.body.message
+    });
 
 });
 
-
-app.listen(5000,()=>{
-
-    console.log("Server running on port 5000");
-
+app.listen(5500, () => {
+    console.log("Server running on port 5500");
 });
