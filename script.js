@@ -20,7 +20,7 @@ stories.forEach(story => {
 
 });
 
-document.getElementById("back").onclick = ()=>{
+document.getElementById("back").onclick = () => {
     viewer.classList.remove("active");
 };
 
@@ -30,7 +30,7 @@ const observer = new IntersectionObserver(entries => {
 
     entries.forEach(entry => {
 
-        if(entry.isIntersecting){
+        if (entry.isIntersecting) {
 
             entry.target.classList.add("show");
 
@@ -38,9 +38,9 @@ const observer = new IntersectionObserver(entries => {
 
     });
 
-},{threshold:0.2});
+}, { threshold: 0.2 });
 
-posts.forEach(post=>{
+posts.forEach(post => {
     observer.observe(post);
 });
 
@@ -49,86 +49,105 @@ const layout_main = document.querySelector(".layout_main");
 const header = document.querySelector(".header");
 const splash = document.querySelector(".splash");
 // let dark = true;
-function toggleTheme(){
-    if(!dark){
-    mode.innerHTML = `<img src="./static/svgviewer-output (14).svg" alt="">`;
-    console.log(dark);
-    layout_main.classList.add("light");
-    posts.forEach(post=>{
-        post.classList.add("post-light");
-    })
-    header.style.borderWidth = "0px";
-    header.style.color = "#962fbf";
-    // console.log(splash.innerHTML);
-    splash.innerHTML = `<img src="static/instagram (1).png" alt="">`
+function toggleTheme() {
+    if (!dark) {
+        mode.innerHTML = `<img src="./static/svgviewer-output (14).svg" alt="">`;
+        console.log(dark);
+        layout_main.classList.add("light");
+        posts.forEach(post => {
+            post.classList.add("post-light");
+        })
+        header.style.borderWidth = "0px";
+        header.style.color = "#962fbf";
+        // console.log(splash.innerHTML);
+        splash.innerHTML = `<img src="static/instagram (1).png" alt="">`
 
     }
-    else{
-    mode.innerHTML = `<img src="./static/svgviewer-output (13).svg" alt="">`;
-    console.log(dark);
-    layout_main.classList.remove("light");
-    posts.forEach(post=>{
-        post.classList.remove("post-light");
-    })
-    header.style.borderWidth = "1px";
-    header.style.color = "White";
-    splash.innerHTML = `<img src="static/downloadlogoinsta.png" alt="">`
+    else {
+        mode.innerHTML = `<img src="./static/svgviewer-output (13).svg" alt="">`;
+        console.log(dark);
+        layout_main.classList.remove("light");
+        posts.forEach(post => {
+            post.classList.remove("post-light");
+        })
+        header.style.borderWidth = "1px";
+        header.style.color = "White";
+        splash.innerHTML = `<img src="static/downloadlogoinsta.png" alt="">`
 
     }
 }
 let dark = localStorage.getItem("theme") === "dark";
 toggleTheme();
-mode.addEventListener('click',()=>{
+mode.addEventListener('click', () => {
     dark = !dark;
     localStorage.setItem("theme", dark ? "dark" : "light");
-  
+
     toggleTheme();
 
 
 });
 
-document.querySelectorAll(".post").forEach(post => {
 
-    const img = post.querySelector(".post-image");
-    const next = post.querySelector(".next");
-    const prev = post.querySelector(".prev");
-    const post_count = document.querySelector(".post-count");
-    const images = JSON.parse(img.dataset.images);
+document.querySelectorAll(".img-container").forEach(container => {
 
-    let current = 0;
-    prev.style.display = "none";
+    const carousel = container.querySelector(".carousel");
+
+    const next = container.querySelector(".next");
+
+    const prev = container.querySelector(".prev");
+
     next.addEventListener("click", () => {
-        current++;
-        prev.style.display = "block";
-        if (current >= images.length) {
-            // current = 0;          // loop back to first
-            current = images.length - 1; // stop at last
-            next.style.display = "none";
-        }
-        if(current==images.length-1){
-            next.style.display = "none";
-        }
-        img.src = images[current];
-        post_count.innerHTML = `${current + 1}/${images.length}`;
-        console.log(current);
+
+        carousel.scrollBy({
+
+            left: carousel.clientWidth,
+
+            behavior: "smooth"
+
+        });
+
+
     });
 
     prev.addEventListener("click", () => {
-        current--;
-        next.style.display = "block";
-        if (current < 0) {
-            current = images.length - 1; // loop to last
-            current = 0; // stop at first
-            prev.style.display = "none";
-        }
-        if(current == 0){
-            prev.style.display = "none";
-        }
 
-        img.src = images[current];
-        post_count.innerHTML = `${current + 1}/${images.length}`;
-        console.log(current);
+        carousel.scrollBy({
+
+            left: -carousel.clientWidth,
+
+            behavior: "smooth"
+
+        });
+
     });
+    function updateArrows() {
+ if (window.innerWidth <= 700) {
+        prev.style.display = "none";
+        next.style.display = "none";
+        requestAnimationFrame(updateArrows);
+        return;
+    }
+        prev.style.display =
+            carousel.scrollLeft <= 1 ? "none" : "flex";
 
+        next.style.display =
+            carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 1
+                ? "none"
+                : "flex";
+    }
+
+    carousel.addEventListener("scroll", updateArrows);
+    const dots = container.querySelectorAll(".dot");
+    carousel.addEventListener("scroll", () => {
+
+        const index = Math.round(
+            carousel.scrollLeft / carousel.clientWidth
+        );
+
+        dots.forEach(dot => dot.classList.remove("active"));
+
+        dots[index].classList.add("active");
+
+    });
+   
 });
-
