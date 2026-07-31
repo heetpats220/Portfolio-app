@@ -5,24 +5,26 @@ window.addEventListener("load", () => {
     }, 500);
 });
 
+
 const stories = document.querySelectorAll(".story");
-const viewer = document.getElementById("storyViewer");
-const frame = document.getElementById("storyFrame");
-
+const storyImage = document.querySelector("#storyImage");
+const back = document.querySelector(".back");
+const background = document.querySelector(".semesters");
 stories.forEach(story => {
-
     story.addEventListener("click", () => {
-        frame.src = story.dataset.story;
-
-        viewer.classList.add("active");
-
+        storyImage.src = story.dataset.img;
+        storyImage.style.display = "flex";
+        back.style.display = "block";
+        background.style.display = "flex";
     });
-
 });
+back.addEventListener('click',()=>{
+    storyImage.style.display = "none";
+    back.style.display = "none";
+    background.style.display = "none";
+})
 
-document.getElementById("back").onclick = () => {
-    viewer.classList.remove("active");
-};
+
 
 const posts = document.querySelectorAll(".post");
 

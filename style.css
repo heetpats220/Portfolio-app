@@ -428,6 +428,8 @@ body {
     gap:6px;
 
     margin-top:12px;
+    position: relative;
+    top: -30px;
 
 }
 
@@ -448,6 +450,42 @@ body {
     background:white;
 
 }
+#storyImage{
+    display:none;
+    position: absolute;
+    z-index: 999;
+    /* width: 100vw; */
+    /* top: 0px; */
+    /* left: 0px; */
+    height: 90%;
+    transition:all 0.2s ease-in;
+    border-radius:10px;
+}
+.semesters{
+    background-color: var(--bg);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 999;
+    top: 0px;
+    left: 0px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.back{
+    display: none;
+    position: absolute;
+    top: 20px;
+    z-index:1000;
+    left:20px;
+    filter:invert(1);
+}
+.back:hover{
+    cursor:pointer;
+}
+
+
 
 
 
@@ -505,5 +543,19 @@ body {
     .next, .prev{
         display:none;
     }
-    
+    #storyImage{
+    display:none;
+    position: absolute;
+    z-index: 999;
+    width: 100vw;
+    top: 0px;
+    left: 0px;
+    height:auto;
+    transition:all 0.2s ease-in;
+    border-radius:0px;
+}
+.back{
+    filter:none;
+}
+ 
 }
