@@ -204,6 +204,7 @@ body {
   gap: 15px;
   /* margin: 0px 40px 40px 40px; */
   margin: 0px 20px 40px 20px;
+  /* justify-content: center; */
 }
 .profile-buttons button {
   font-family: inherit;
@@ -213,13 +214,16 @@ body {
   border-radius: 8px;
   color: white;
   cursor: pointer;
-  width: 280px;
+  width: 30%;
   height: 40px;
   transition: all 0.1s ease-in;
 }
 
 .profile-buttons button:hover {
   background-color: rgb(67, 70, 77);
+}
+strong {
+    margin-right: 5px;
 }
 
 /* HIGHLIGHTS */
@@ -298,7 +302,7 @@ body {
   margin: 40px;
   display: flex;
   justify-content: start;
-  height:500px;
+  height:100vh;
   /* overflow-y: scroll; */
   /* zoom:0.5; */
 }
@@ -348,6 +352,44 @@ body {
 }
 #about{
   height:660px;
+}
+
+.profile-container::-webkit-scrollbar {
+  background-color: transparent;
+  transition: all 0.3s ease-in;
+}
+
+.profile-container::-webkit-scrollbar-thumb {
+  background-color: #a8a8a82b;
+  border-radius: 10px;
+  width: 5px;
+}
+
+.profile-container::-webkit-scrollbar:hover {
+  background-color: var(--hover);
+}
+/* .certi{
+  
+} */
+.certi img{
+  width:100%;
+}
+.certificate{
+  margin-bottom:30px;
+  display:flex;
+}
+.c{
+  margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    gap:5px;
+}
+.certi img:hover{
+  transform:scale(1.01);
+  transition:all 0.2s ease-in-out;
 }
 
 
@@ -446,6 +488,9 @@ body {
 }
 .abt{
   font-size:22px;
+}
+.stats{
+  width:38%;
 }
 }
 @media(min-width: 768px) {

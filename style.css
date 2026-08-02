@@ -548,14 +548,11 @@ body {
     position: absolute;
     z-index: 999;
     width: 100vw;
-    top: 0px;
+    /* top: 0px; */
     left: 0px;
     height:auto;
     transition:all 0.2s ease-in;
     border-radius:0px;
-}
-.back{
-    filter:none;
 }
  
 }
