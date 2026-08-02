@@ -247,28 +247,25 @@ strong {
   transform: scale(0.4);
   transition: all 1s;
 }
-
-.highlight img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  border: 2px solid var(--border);
+.highlight:hover{
+  transform:scale(1.10);
+  transition:all 0.2s ease-in-out;
+  cursor:pointer;
 }
 
-.highlight.new {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  border: 1px solid var(--subtext);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+
+.circle {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #feda75, #fa7e1e, #d62976, #962fbf);
+    /* color: black; */
+    border: 3px solid white;
+    border-radius: 50%;
 }
 
-.plus {
-  font-size: 30px;
-}
 
 /* TABS */
 .tabs {
@@ -483,6 +480,10 @@ strong {
   font-size:24px;
 }
 .highlight img{
+  width:120px;
+  height:120px;
+}
+.circle{
   width:120px;
   height:120px;
 }
