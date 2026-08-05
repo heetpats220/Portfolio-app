@@ -411,7 +411,7 @@ body{
 
 }
 .expanded{
-  background-color: color(srgb 0 0 0 / 0.5);
+  background-color: color(srgb 0 0 0 / 0.8);
     /* margin: 20px; */
     width: 100%;
     padding:20px;
@@ -508,6 +508,6 @@ body{
     position:unset;
    }
    .top{
-  top:120px;
+  top:175px;
 }
 }
