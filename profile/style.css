@@ -262,7 +262,7 @@ strong {
     align-items: center;
     background: linear-gradient(135deg, #feda75, #fa7e1e, #d62976, #962fbf);
     /* color: black; */
-    border: 3px solid white;
+    /* border: 3px solid white; */
     border-radius: 50%;
 }
 

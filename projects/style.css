@@ -91,6 +91,9 @@ body {
   align-items: center;
   padding: 20px;
   border-bottom: var(--border);
+  position: relative;
+    z-index: 5;
+    background-color: rgb(12 15 20 / 50%);
   /* position: absolute;
   top: 0px;
   z-index: 5;
@@ -116,7 +119,7 @@ body {
 /* PROFILE */
 .profile-container {
   flex: 1;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   /* padding: 40px 60px; */
 }
 
@@ -184,11 +187,11 @@ body {
   right: 0;
   bottom: 0;
 
-  height: 300px;
+  height: 500px;
 
   background:
     linear-gradient(transparent,
-      rgba(0, 0, 0, .95));
+      rgba(0, 0, 0, 3.5));
 }
 
 /* BOTTOM CONTENT */
@@ -223,6 +226,9 @@ body {
 
 .username {
   font-weight: 600;
+}
+.username a{
+  text-decoration: none;
 }
 
 .follow-btn {
@@ -322,6 +328,111 @@ body {
 .profile-container::-webkit-scrollbar:hover {
   background-color: var(--hover);
 }
+.reel-container{
+
+    height:100vh;
+
+    overflow-y:auto;
+
+    scroll-snap-type:y mandatory;
+
+    scroll-behavior:smooth;
+
+    scrollbar-width:none;
+
+    -ms-overflow-style:none;
+
+}
+
+.reel-container::-webkit-scrollbar{
+
+    display:none;
+
+}
+.reel-card{
+
+    height:100vh;
+
+    width:100%;
+
+    scroll-snap-align:start;
+
+    scroll-snap-stop:always;
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:black;
+
+    flex-shrink:0;
+
+}
+.reel-image{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+.reels-page{
+
+    display:flex;
+
+    justify-content:center;
+
+    height:100vh;
+    position: relative;
+    top: -20px;
+
+}
+
+.reel-container{
+
+    /* width:430px; */
+
+    max-width:100%;
+
+}
+body{
+
+    overflow:hidden;
+
+}
+.details{
+  display:none;
+  font-weight: 200;
+    line-height: 1.6;
+    margin-top: 20px;
+
+}
+.expanded{
+  background-color: color(srgb 0 0 0 / 0.5);
+    /* margin: 20px; */
+    width: 100%;
+    padding:20px;
+    left:0px;
+    height: 100vh;
+}
+.top{
+  top:70px;
+}
+.profile-row img{
+  color:#0000ff;
+}
+.profile-row a{
+  width:30px;
+  height:30px;
+}
+.username a{
+  color:blue;
+  text-decoration: none;
+}
+
 
 @media (max-width: 768px) {
 
@@ -374,7 +485,7 @@ body {
   top: 0px;
   z-index: 5;
   width: 100%;
-  background-color: rgb(12 15 20 / 50%);;
+  background-color: rgb(12 15 20 / 50%);
 }
 
   .icon:hover {
@@ -392,4 +503,10 @@ body {
   /* .reel-card{
     /* width:95%; 
   } */
+   .reels-page{
+    position:unset;
+   }
+   .top{
+  top:120px;
+}
 }
