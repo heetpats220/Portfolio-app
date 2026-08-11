@@ -406,7 +406,7 @@ body{
 .details{
   display:none;
   font-weight: 200;
-    line-height: 1.6;
+    /* line-height: 1.6; */
     margin-top: 20px;
     font-size:15px;
 
@@ -418,6 +418,7 @@ body{
     padding:20px;
     left:0px;
     height: 100vh;
+    /* position:fixed; */
 }
 .top{
   top:70px;
@@ -509,6 +510,15 @@ body{
     position:unset;
    }
    .top{
-  top:175px;
+  top: 69.6px;
+}
+.expanded{
+  background-color: color(srgb 0 0 0 / 0.8);
+    /* margin: 20px; */
+    width: 100%;
+    padding:20px;
+    left:0px;
+    height: 100vh;
+    position:fixed;
 }
 }
