@@ -419,6 +419,7 @@ body{
     left:0px;
     height: 100vh;
     /* position:fixed; */
+    z-index:4;
 }
 .top{
   top:70px;
@@ -463,8 +464,12 @@ body{
   transition:all 0.1s ease-in-out;
 }
 .like:active{
+  filter:invert(1);
   transform:scale(1.5);
 
+}
+.icon-2:hover{
+  cursor:pointer;
 }
 
 
