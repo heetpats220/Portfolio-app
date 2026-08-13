@@ -28,3 +28,15 @@ more.addEventListener('click',()=>{
 follow.addEventListener('click',()=>{
     follow.innerHTML = "Following";
 })
+
+const like = document.querySelector(".like");
+const inv = document.querySelector(".inv");
+const save = document.querySelector(".save");
+like.addEventListener('click',()=>{
+    like.innerHTML= `<img src="../static/svgviewer-png-output (25).png" alt="">`;
+    like.classList.add("inv");
+})
+save.addEventListener('click',()=>{
+    save.innerHTML= `<img src="../static/svgviewer-png-output (26).png" alt="">`;
+    save.classList.add("inv");
+})
