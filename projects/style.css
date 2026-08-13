@@ -472,6 +472,11 @@ body{
   cursor:pointer;
 }
 
+.hidethis{
+    display:none;
+}
+
+
 
 
 @media (max-width: 768px) {
@@ -514,7 +519,7 @@ body{
     /* margin-top:70px; */
     display: flex;
         align-items: center;
-        height: 113vh;
+        /* height: 113vh; */
   }
   .header {
   display: flex;

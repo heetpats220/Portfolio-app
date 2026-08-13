@@ -273,6 +273,11 @@ body {
     transform: translateY(0);
 }
 
+.hidethis{
+    display:none;
+}
+
+
 /* MOBILE */
 @media (max-width: 768px) {
 

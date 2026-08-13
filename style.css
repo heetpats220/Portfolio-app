@@ -484,7 +484,9 @@ body {
 .back:hover{
     cursor:pointer;
 }
-
+.hidethis{
+    display:none;
+}
 
 
 

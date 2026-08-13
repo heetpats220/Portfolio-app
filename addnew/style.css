@@ -277,6 +277,11 @@ body {
   background-color: var(--hover);
 }
 
+.hidethis{
+    display:none;
+}
+
+
 
 
 
