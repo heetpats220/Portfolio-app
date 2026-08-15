@@ -186,6 +186,22 @@ body {
   overflow-y: auto;
   flex: 1;
   transition: all 0.3s ease-in;
+  margin-bottom:50px;
+}
+
+.notes::-webkit-scrollbar {
+  background-color: transparent;
+  transition: all 0.3s ease-in;
+}
+
+.notes::-webkit-scrollbar-thumb {
+  background-color: #a8a8a82b;
+  border-radius: 10px;
+  width: 5px;
+}
+
+.notes::-webkit-scrollbar:hover {
+  background-color: var(--hover);
 }
 
 .chat-list::-webkit-scrollbar {
