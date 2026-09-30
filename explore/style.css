@@ -135,6 +135,39 @@ body {
     display:none;
 }
 
+.leetcode-card {
+    padding: 20px;
+    /* border-radius: 12px; */
+    text-align: center;
+    border:var(--border);
+}
+
+.leetcode-count {
+    font-size: 60px;
+    font-weight: bold;
+}
+.leetcode-card img{
+  position:relative;
+  bottom:-7px;
+}
+
+.leetcode-card p {
+    margin-top: 5px;
+}
+.profile-container::-webkit-scrollbar {
+  background-color: transparent;
+  transition: all 0.3s ease-in;
+}
+
+.profile-container::-webkit-scrollbar-thumb {
+  background-color: #a8a8a82b;
+  border-radius: 10px;
+  width: 5px;
+}
+
+.profile-container::-webkit-scrollbar:hover {
+  background-color: var(--hover);
+}
 
 
 

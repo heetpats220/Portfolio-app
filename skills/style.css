@@ -186,7 +186,7 @@ body {
   overflow-y: auto;
   flex: 1;
   transition: all 0.3s ease-in;
-  margin-bottom:90px;
+  /* margin-bottom:50px; */
 }
 
 .notes::-webkit-scrollbar {
@@ -337,5 +337,8 @@ body {
   .icon img {
   width: 24px;
   /* filter:invert(1); */
+}
+.chat-list{
+  margin-bottom:90px;
 }
 }
