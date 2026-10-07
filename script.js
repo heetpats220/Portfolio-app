@@ -50,11 +50,13 @@ const mode = document.querySelector(".edit");
 const layout_main = document.querySelector(".layout_main");
 const header = document.querySelector(".header");
 const splash = document.querySelector(".splash");
+
 // let dark = true;
 function toggleTheme() {
     if (!dark) {
         mode.innerHTML = `<img src="./static/svgviewer-output (14).svg" alt="">`;
         console.log(dark);
+        mode.classList.remove("filterclass");
         layout_main.classList.add("light");
         posts.forEach(post => {
             post.classList.add("post-light");
@@ -68,6 +70,7 @@ function toggleTheme() {
     else {
         mode.innerHTML = `<img src="./static/svgviewer-output (13).svg" alt="">`;
         console.log(dark);
+        mode.classList.add("filterclass");
         layout_main.classList.remove("light");
         posts.forEach(post => {
             post.classList.remove("post-light");
